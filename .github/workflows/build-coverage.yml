@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - ros2-master
+      - test_coverage
   pull_request:
     branches:
       - ros2-master
