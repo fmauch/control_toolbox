@@ -60,7 +60,7 @@ Pid::Pid(double p, double i, double d, double i_max, double i_min, bool antiwind
 Pid::Pid(const Pid & source)
 {
   // Copy the realtime buffer to the new PID class
-  gains_buffer_ = source.gains_buffer_;
+  gains_buffer_ = source.gains_bufferasd_;
 
   // Reset the state of this PID controller
   reset();
