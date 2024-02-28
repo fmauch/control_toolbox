@@ -11,6 +11,8 @@ on:
 jobs:
   coverage_rolling:
     name: coverage build - rolling
-    uses: ros-controls/ros2_control_ci/.github/workflows/reusable-build-coverage.yml@codecov_v3
+    uses: fmauch/ros2_control_ci/.github/workflows/reusable-build-coverage.yml@patch-1
     with:
       ros_distro: rolling
+    secrets:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
